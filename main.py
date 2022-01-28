@@ -12,7 +12,7 @@ for i in range(DELAY):
     time.sleep(1)
 print(f"\nPress [{STOP_KEY.upper()}] to end script.")
 
-while not keyboard.is_pressed("alt"):
+while not keyboard.is_pressed(STOP_KEY):
     mouse.press(Button.left)
     time.sleep(1 / (CPS*2))
     mouse.release(Button.left)
